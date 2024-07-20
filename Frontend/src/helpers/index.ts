@@ -1,1 +1,1 @@
-export { uploadImage } from './backend_helper'
+export { uploadImage } from './backend_helper';

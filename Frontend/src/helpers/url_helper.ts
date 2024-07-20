@@ -1,14 +1,13 @@
 // VERSION API
-export const API_VERSION = "/api/v1"
+export const API_VERSION = '/api/v1';
 
 // PREFIX
-export const PREFIX_PICASSO = "/picasso"
+export const PREFIX_PICASSO = '/picasso';
 
 // UPLOAD IMAGE
-export const UPLOAD_IMAGE = "/upload"
+export const UPLOAD_IMAGE = '/upload';
 
 export class Endpoints {
-    // Images
-    static readonly uploadImage =`${API_VERSION}${PREFIX_PICASSO}${UPLOAD_IMAGE}`;
-
+  // Images
+  static readonly uploadImage = `${API_VERSION}${PREFIX_PICASSO}${UPLOAD_IMAGE}`;
 }
