@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // defaults
-axios.defaults.baseURL = "";
+axios.defaults.baseURL = "http://127.0.0.1:8000";
 
 // content type
 axios.defaults.headers.post["Content-Type"] = "application/json";
@@ -72,7 +72,9 @@ axios.interceptors.response.use(
     };
   
     put = (url: any, data: any, config?: any) => {
-      return axios.put(url, data, config);
+      const resp = axios.put(url, data, config);
+      console.log("🚀 ~ APIClient ~ resp:", resp)
+      return resp
     };
     /**
      * Delete

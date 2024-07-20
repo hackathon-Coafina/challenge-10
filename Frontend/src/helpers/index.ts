@@ -1,2 +1,1 @@
-export { uploadImage } from './api/config';
-export { PUT_IMAGE } from './api/url';
+export { uploadImage } from './backend_helper'
