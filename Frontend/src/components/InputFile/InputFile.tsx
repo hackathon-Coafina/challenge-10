@@ -1,23 +1,15 @@
-import { useState } from 'react';
-import { uploadImage, PUT_IMAGE } from './../../helpers';
+import { FC } from 'react';
 
-export const InputFile = () => {
-  const [state, setState] = useState<any>(null);
+export interface Props {
+  handleFile(e: any): void;
+  handleUpload(): void;
+}
 
-  const handleFile = (e) => {
-    let file: any = e.target.files[0];
-    setState({ file });
-  };
-
-  const handleUpload = async (e) => {
-    console.log(state.file);
-    await uploadImage(state.file, PUT_IMAGE);
-  };
-
+export const InputFile: FC<Props> = ({ handleFile, handleUpload }) => {
   return (
     <>
       <input type="file" name="file" id="" onChange={(e) => handleFile(e)} />
-      <button onClick={(e) => handleUpload(e)}>button</button>
+      <button onClick={() => handleUpload()}>button</button>
     </>
   );
 };
