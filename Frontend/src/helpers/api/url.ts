@@ -1,1 +1,1 @@
-export const PUT_IMAGE = '/upload'
+export const PUT_IMAGE = '/upload';
