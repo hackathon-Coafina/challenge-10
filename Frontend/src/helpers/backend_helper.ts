@@ -11,4 +11,11 @@ export const uploadImage = (file: any) => {
         }
     }
     return api.put(Endpoints.uploadImage, file, config)
+    .then((response) => {
+		return response
+      })
+      .catch((error) => {
+        // handle errors
+        console.log(error);
+      });
 }

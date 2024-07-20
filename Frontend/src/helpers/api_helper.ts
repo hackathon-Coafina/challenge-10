@@ -73,7 +73,6 @@ axios.interceptors.response.use(
   
     put = (url: any, data: any, config?: any) => {
       const resp = axios.put(url, data, config);
-      console.log("🚀 ~ APIClient ~ resp:", resp)
       return resp
     };
     /**
