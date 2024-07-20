@@ -1,13 +1,13 @@
-import { Header, Footer, InputFile } from "./../../components";
+import { Header, Footer, InputFile } from './../../components';
 
 export const Home = () => {
   return (
     <>
-        <main>
-            <Header />
-            <InputFile />
-            <Footer/>
-        </main>
+      <main>
+        <Header />
+        <InputFile />
+        <Footer />
+      </main>
     </>
-  )
-}
+  );
+};

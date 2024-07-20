@@ -1,5 +1,3 @@
 export const InputFile = () => {
-  return (
-    <input type="file" name="" id="" />
-  )
-}
+  return <input type="file" name="" id="" />;
+};

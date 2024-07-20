@@ -1,3 +1,3 @@
-export { Header } from './Header'
-export { InputFile } from './InputFile'
-export { Footer } from './Footer'
+export { Header } from './Header';
+export { InputFile } from './InputFile';
+export { Footer } from './Footer';
