@@ -1,6 +1,3 @@
-# Python
-from typing import Annotated
-
 class PicassoService:
     def __init__(self, file: bytes) -> None:
         self.file = file
