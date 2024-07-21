@@ -55,15 +55,13 @@ fastapi dev main.py
 
 esto entregara el siguiente link: http://127.0.0.1:8000 para usar el backend, dicho link esa agregado al frontend
 
+Ha de tenerse presente que los modelos, debido a su tamaño, no se encuentran en el repositorio, por lo que se deben descargar y situar en la carpeta Backend/models/ para que el proyecto funcione correctamente. Los modelos se encuentran en el siguiente link de Google Drive: [Modelos](https://drive.google.com/file/d/193aZ7EbuCw-0SGS5X-jwbdZdRQb_ar_h/view?usp=drive_link)
+
 ## Dataset
 
 El dataset utilizado en este proyecto consiste en imágenes de pinturas obtenidas de [WikiArt](https://www.wikiart.org/). WikiArt es una enciclopedia visual del arte que proporciona acceso a una gran colección de pinturas de varios géneros y autores. Cada imagen en el dataset está etiquetada con su género y autor, lo que nos permite utilizar estos datos para entrenar nuestras redes neuronales.
 
 La estructura del dataset está organizada en diferentes carpetas según los géneros y autores, lo que facilita el acceso y la preparación de los datos para el entrenamiento de los modelos.
-
-## Requisitos
-
-Para ejecutar este proyecto, necesitas tener instaladas las siguientes bibliotecas:
 
 ## Preprocesamiento
 
@@ -73,6 +71,8 @@ Utilizamos una función de preprocesamiento para redimensionar, normalizar y aum
 La función de preprocesamiento incluye los pasos de redimensionamiento, normalización y posibles aumentos de datos, como recortes aleatorios y máscaras de corte.
 
 ## Entrenamiento del Modelo
+
+El entrenamiento del modelo fue realizado en Kaggle, utilizando GPU para acelerar el proceso. Cada modelo fue entrenado en un conjunto de datos separado y ajustado para obtener el mejor rendimiento posible. El notebook que contiene la información del desarrollo del modelo se encuentra en el archivo nn-art.ipynb.
 
 ### Modelo de Clasificación de Géneros
 La red neuronal para la clasificación de géneros está diseñada para categorizar pinturas en varios géneros. El proceso de entrenamiento implica cargar y preprocesar el dataset, definir y compilar el modelo, entrenar el modelo y guardarlo para su uso futuro.
