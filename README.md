@@ -12,6 +12,9 @@ Los principales objetivos de este proyecto son:
 - [Proyecto de Clasificación de Pinturas](#proyecto-de-clasificación-de-pinturas)
   - [Resumen del Proyecto](#resumen-del-proyecto)
   - [Tabla de Contenidos](#tabla-de-contenidos)
+  - [Como usar](#Como-usar)
+    - [Frontend](#Frontend)
+    - [Backend](#Backend)
   - [Dataset](#dataset)
   - [Requisitos](#requisitos)
   - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -23,6 +26,34 @@ Los principales objetivos de este proyecto son:
   - [Uso](#uso)
   - [Contribuir](#contribuir)
   - [Licencia](#licencia)
+
+## Como usar
+
+### Frontend
+
+Ir a la carpeta de Frontend/ tener instalador node y npm, descargar las dependencias y ejecuar el siguiente comando
+
+```
+npm run dev
+```
+
+Con este comando ejecutado en la terminal mostrara donde usar el proyecto
+
+### Backend
+
+Tener instalado python3.11, ir a la carpeta Backend/ e instalar dependencias con el siguiente comando:
+
+```
+pip install -r requirements.txt
+```
+
+Una vez instalado ejecutar el comando de ejecucion del proyecto
+
+```
+fastapi dev main.py
+```
+
+esto entregara el siguiente link: http://127.0.0.1:8000 para usar el backend, dicho link esa agregado al frontend
 
 ## Dataset
 
